@@ -15,8 +15,8 @@ startdate: 2021-02-08    # machine-readable start date for the workshop in YYYY-
 enddate: 2021-02-12     # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
 instructor: ["Douglas Lowe", "Juan Rodriguez Herrera"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
 helper: ["Anja le Blanc", "Andrew Smedley"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-email: ["first@example.org","second@example.org"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
-collaborative_notes:  # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
+email: ["david.schultz@manchester.ac.uk","Anja.LeBlanc@manchester.ac.uk","douglas.lowe@manchester.ac.uk"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
+collaborative_notes:  https://docs.google.com/document/d/1h-BbFBlwpkeJUZ9YHG8e_reaRuIKdX7ZXH7D13fnMf0/edit?usp=sharing # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
@@ -106,7 +106,6 @@ INTRODUCTION
 
 Edit the general explanatory paragraph below if you want to change
 the pitch.
-{% endcomment %}
 {% if site.carpentry == "swc" %}
 {% include swc/intro.html %}
 {% elsif site.carpentry == "dc" %}
@@ -114,6 +113,9 @@ the pitch.
 {% elsif site.carpentry == "lc" %}
 {% include lc/intro.html %}
 {% endif %}
+{% endcomment %}
+
+include uom/intro.html
 
 {% comment %}
 AUDIENCE
