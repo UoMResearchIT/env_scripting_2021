@@ -115,7 +115,7 @@ the pitch.
 {% endif %}
 {% endcomment %}
 
-{% include uom/intro.html %}
+{% include intro.html %}
 
 {% comment %}
 AUDIENCE
