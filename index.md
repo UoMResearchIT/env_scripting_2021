@@ -18,6 +18,7 @@ helper: ["Anja le Blanc", "Andrew Smedley", "Joshua Woodcock"]     # boxed, comm
 email: ["david.schultz@manchester.ac.uk","Anja.LeBlanc@manchester.ac.uk","douglas.lowe@manchester.ac.uk"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes:  https://docs.google.com/document/d/1h-BbFBlwpkeJUZ9YHG8e_reaRuIKdX7ZXH7D13fnMf0/edit?usp=sharing # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
+sponsor: "Natural Environment Research Council, through a grant from the Industrial Strategy Training Course program to Prof. David Schultz at the University of Manchester."
 ---
 
 {% comment %} See instructions in the comments below for how to edit specific sections of this workshop template. {% endcomment %}
