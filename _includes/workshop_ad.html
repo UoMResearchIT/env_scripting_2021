@@ -43,14 +43,14 @@
           {{page.helper | join: ', ' %}}
           </p>
           {% endif %}
-          {% if page.sponsor %}
-          <p>
-          <strong>Sponsor:</strong>
-          {{page.sponsor}}
-          </p>
-          {% endif %}
         </div>
       </div>
+      {% if page.sponsor %}
+      <p>
+      <strong>Sponsor:</strong>
+      {{page.sponsor}}
+      </p>
+      {% endif %}
     </div>
   </div>
 </div>
