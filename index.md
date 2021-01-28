@@ -13,8 +13,8 @@ humandate: "Feb 8-12, 2021"    # human-readable dates for the workshop (e.g., "F
 humantime: "9:00 am - 4:30 pm"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
 startdate: 2021-02-08    # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
 enddate: 2021-02-12     # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["Douglas Lowe", "Juan Rodriguez Herrera"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["Anja le Blanc", "Andrew Smedley", "Joshua Woodcock"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+instructor: ["Douglas Lowe"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["Anja le Blanc", "Andrew Smedley", "Joshua Woodcock", "Juan Rodriguez Herrera"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 email: ["david.schultz@manchester.ac.uk","Anja.LeBlanc@manchester.ac.uk","douglas.lowe@manchester.ac.uk"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes:  https://docs.google.com/document/d/1h-BbFBlwpkeJUZ9YHG8e_reaRuIKdX7ZXH7D13fnMf0/edit?usp=sharing # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document (e.g., https://pad.carpentries.org/2015-01-01-euphoria)
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
@@ -191,14 +191,12 @@ Modify the block below if there are any special requirements.
 {% endcomment %}
 <p id="requirements">
   <strong>Requirements:</strong>
-  {% if online == "false" %}
-    Participants must bring a laptop with a
-    Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.
-  {% else %}
-    Participants must have access to a computer with a
-    Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges on.
-  {% endif %}
-  They should have a few specific software packages installed (listed <a href="#setup">below</a>).
+    Participants must bring a computer with a Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.).
+    Lessons for the first two days will be taught using linux virtual machines which are accessible using a web browser,
+    while the lesson on the third day will be taught using a remote HPC system. However, students can follow some of 
+    the lessons on their own machines if they wish. For this they that they should have 
+    a few specific software packages installed (listed <a href="#setup">below</a>), which may require them to have 
+    administrative privileges on their computer.
 </p>
 
 {% comment %}
@@ -379,16 +377,15 @@ please preview your site before committing, and make sure to run
 
 <p>
   To participate in a
-  {% if site.carpentry == "swc" %}
   Software Carpentry
-  {% elsif site.carpentry == "dc" %}
-  Data Carpentry
-  {% elsif site.carpentry == "lc" %}
-  Library Carpentry
-  {% endif %}
   workshop,
-  you will need access to the software described below.
-  In addition, you will need an up-to-date web browser.
+  you will need access to the software described below. These will be available for you in the provided linux virtual machines (for which
+  you will need an up-to-date web browser), but if you wish to work on your computer too, follow the installation instructions below.
+</p>
+<p>
+  To connect to ARCHER2 on the Wednesday you will need an ssh client. On linux and OSX this can be done from the terminal, but on
+  Windows you will need to install a terminal client. The recommended client is <a href = "http://mobaxterm.mobatek.net/download-home-edition.html">MobaXterm Home Edition (Installer Edition)</a>.
+</p>
 </p>
 <p>
   We maintain a list of common issues that occur during installation as a reference for instructors
