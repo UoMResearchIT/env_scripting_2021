@@ -386,7 +386,6 @@ please preview your site before committing, and make sure to run
   To connect to ARCHER2 on the Wednesday you will need an ssh client. On linux and OSX this can be done from the terminal, but on
   Windows you will need to install a terminal client. The recommended client is <a href = "http://mobaxterm.mobatek.net/download-home-edition.html">MobaXterm Home Edition (Installer Edition)</a>.
 </p>
-</p>
 <p>
   We maintain a list of common issues that occur during installation as a reference for instructors
   that may be useful on the
