@@ -83,7 +83,7 @@ workshop_site: "https://carpentries.github.io/workshop-template"
 # Course material pages
 bash_course: "http://swcarpentry.github.io/shell-novice/"
 git_course: "http://swcarpentry.github.io/git-novice/"
-bash_adv_course: "https://douglowe.github.io/test_carpentry_webpage/"
+bash_adv_course: "https://uomresearchit.github.io/shell-programming-course/"
 hpc_course: "https://epcced.github.io/archer2-intro-package/"
 
 # Surveys.
